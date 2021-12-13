@@ -17,7 +17,7 @@ const Switch = ({ onToggle }) => {
         <div
           className={
             "bg-black md:w-6 md:h-6 h-5 w-5 rounded-full shadow-md transform duration-300 ease-in-out" +
-            (toggle ? null : toggleClass)
+            (!toggle ? null : toggleClass)
           }
         ></div>
       </div>

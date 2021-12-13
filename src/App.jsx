@@ -4,7 +4,7 @@ import TodoList from './components/todoList'
 import Navbar from './navbar'
 
 export default function App() {
-	const [darkMode, setDarkMode] = useState(false)
+	const [darkMode, setDarkMode] = useState(true)
 
 	function toggleDarkMode() {
 		setDarkMode(!darkMode)
@@ -25,7 +25,7 @@ export default function App() {
 			<div className="min-h-screen w-screen dark:bg-gray-900" >
 				<Navbar toggleDarkMode={toggleDarkMode} />
 				<div className="flex flex-col justify-center items-center" >
-					<div className="mt-10" >
+					<div className="mt-10 flex flex-col w-full px-4" >
 						<TodoForm addTodo={addTodo} />
 						<TodoList todos={todos} deleteTodo={deleteTodo} />
 					</div>
