@@ -25,7 +25,7 @@ export default function App() {
 			<div className="min-h-screen w-screen dark:bg-gray-900" >
 				<Navbar toggleDarkMode={toggleDarkMode} />
 				<div className="flex flex-col justify-center items-center" >
-					<div className="mt-10 flex flex-col w-full px-4" >
+					<div className="mt-10 max-w-screen-sm flex flex-col w-full px-4" >
 						<TodoForm addTodo={addTodo} />
 						<TodoList todos={todos} deleteTodo={deleteTodo} />
 					</div>
